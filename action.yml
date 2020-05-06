@@ -1,0 +1,28 @@
+name: 'AWS SAM GitHub Actions'
+description: 'Runs AWS-SAM via GitHub Actions.'
+author: 'youyo <1003ni2@gmail.com>'
+branding:
+  icon: 'terminal'
+  color: 'yellow'
+inputs:
+  sam_version:
+    description: 'AWS SAM version to install.'
+    default: 'latest'
+  sam_command:
+    description: 'AWS SAM subcommand to execute.'
+    required: true
+  s3_bucket:
+    description: "s3 bucket to deploy code to. require for package command"
+    required: false
+  s3_prefix:
+    Description: "s3 object key prefix to prepend to the ZIP file deployed to the s3 bucket"
+    required: false
+  capabilities:
+    Description: "capabilites to pass to cloud formation when creating/update stack"
+    required: false
+  parameter_overrides:
+    Description: "Parameter overrides required by the template"
+    required: false
+runs:
+  using: 'docker'
+  image: './Dockerfile'
