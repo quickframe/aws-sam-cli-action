@@ -1,6 +1,6 @@
 name: 'AWS SAM GitHub Actions'
-description: 'Runs AWS-SAM via GitHub Actions.'
-author: 'youyo <1003ni2@gmail.com>'
+description: 'Runs AWS-SAM CLI via GitHub Actions.'
+author: 'chad <chad@quickframe.com>'
 branding:
   icon: 'terminal'
   color: 'yellow'
