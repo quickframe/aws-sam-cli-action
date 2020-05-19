@@ -11,6 +11,9 @@ inputs:
   sam_command:
     description: 'AWS SAM subcommand to execute.'
     required: true
+  stack_name:
+    description: 'Cloudformation Stack Name'
+    required: true
   s3_bucket:
     description: "s3 bucket to deploy code to. require for package command"
     required: false
