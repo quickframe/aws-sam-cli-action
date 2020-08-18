@@ -2,7 +2,8 @@
 pumped sam version
 
 # v2
-working version!
+Better error code handling.
+When no changeset is needed, it is not consider an error
 
 # v1
 Initial Release. Supports basic build, package, and deploy
