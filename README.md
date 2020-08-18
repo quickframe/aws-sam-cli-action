@@ -27,19 +27,19 @@ jobs:
 
 
     - name: SAM build
-      uses: quickframe/aws-sam-action@v1
+      uses: quickframe/aws-sam-action@v3
       with:
         sam_command: build
 
     - name: SAM package
-      uses: quickframe/aws-sam-action@v1
+      uses: quickframe/aws-sam-action@v3
       with:
         sam_command: package
         s3_bucket: lambdas
         s3_prefix: my-cool-lambda/dev
 
     - name: SAM deploy
-      uses: quickframe/aws-sam-action@feature/improve
+      uses: quickframe/aws-sam-action@v3
       with:
         sam_command: deploy
         stack_name: my-cool-lambda
